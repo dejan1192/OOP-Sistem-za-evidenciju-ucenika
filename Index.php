@@ -15,8 +15,8 @@ $dnevnik = Dnevnik::getInstance();
 $nastavnici =  TeacherFactory::getInstance()->make(5)->create();
 
 
-$Razred6 = Factory::create(StudentFactory::class)->make(20)->create(Dnevnik::RAZRED_6);
-$Razred5 = Factory::create(StudentFactory::class)->make(20)->create(Dnevnik::RAZRED_5);
+$Razred6 = Factory::create('student')->make(20)->create(Dnevnik::RAZRED_6);
+$Razred5 = Factory::create('student')->make(20)->create(Dnevnik::RAZRED_5);
 
 
 $nastavnikBiologije = $dnevnik->dodajNastavnika($nastavnici[0],Dnevnik::PREDMET_BIOLOGIJA );
@@ -39,7 +39,7 @@ echo PHP_EOL;
 
 
 
-$odsutniUcenici  = Factory::create(StudentFactory::class)->make(2)->create(Dnevnik::RAZRED_6);
+$odsutniUcenici  = Factory::create('student')->make(2)->create(Dnevnik::RAZRED_6);
 
 
 //Odsustvo 2 ucenika po 5 casova
