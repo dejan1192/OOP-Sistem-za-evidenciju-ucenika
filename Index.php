@@ -20,10 +20,10 @@ $Razred5 = Factory::create(StudentFactory::class)->make(20)->create(Dnevnik::RAZ
 
 
 $nastavnikBiologije = $dnevnik->dodajNastavnika($nastavnici[0],Dnevnik::PREDMET_BIOLOGIJA );
-$nastavnikFizike =  $dnevnik->dodajNastavnika($nastavnici[1], $dnevnik::PREDMET_FIZIKA );
-$nastavnikHemije =  $dnevnik->dodajNastavnika($nastavnici[2], $dnevnik::PREDMET_HEMIJA );
-$nastavnikIstorije = $dnevnik->dodajNastavnika($nastavnici[3], $dnevnik::PREDMET_ISTORIJA );
-$nastavnikMatematike =  $dnevnik->dodajNastavnika($nastavnici[4], $dnevnik::PREDMET_MATEMATIKA);
+$nastavnikFizike =  $dnevnik->dodajNastavnika($nastavnici[1], Dnevnik::PREDMET_FIZIKA );
+$nastavnikHemije =  $dnevnik->dodajNastavnika($nastavnici[2], Dnevnik::PREDMET_HEMIJA );
+$nastavnikIstorije = $dnevnik->dodajNastavnika($nastavnici[3], Dnevnik::PREDMET_ISTORIJA );
+$nastavnikMatematike =  $dnevnik->dodajNastavnika($nastavnici[4], Dnevnik::PREDMET_MATEMATIKA);
 
 
 
